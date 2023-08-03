@@ -1,0 +1,48 @@
+.card__box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 40px;
+}
+.card__item:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.card__item {
+  height: 250px;
+  width: 300px;
+  border-radius: 10px;
+  background: rgb(22, 140, 163);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 140, 163, 1) 25%,
+    rgba(12, 123, 134, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+.card__item img {
+  height: 150px;
+  width: 280px;
+  border-radius: 10px;
+}
+.card__btn button {
+  background: rgb(17, 107, 145);
+  background: linear-gradient(
+    90deg,
+    rgba(17, 107, 145, 1) 25%,
+    rgba(12, 123, 134, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+@media screen and (max-width: 780px) {
+  .card__box {
+    grid-template-columns: auto;
+  }
+}

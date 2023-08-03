@@ -1,0 +1,31 @@
+.portfolio {
+  margin-top: 80px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.portfolio__btn button {
+  background: rgb(22, 140, 163);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 140, 163, 1) 25%,
+    rgba(12, 123, 134, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}

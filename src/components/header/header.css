@@ -1,0 +1,47 @@
+.header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  border-bottom: 2px solid rgb(21, 93, 134);
+  background: rgb(22, 140, 163);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 140, 163, 1) 25%,
+    rgba(12, 123, 134, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  z-index: 100;
+}
+.nav__logo {
+  font-style: oblique;
+}
+.nav__menu {
+  display: flex;
+  gap: 30px;
+}
+.nav__menu a {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 55px;
+  }
+  .nav__logo {
+    font-size: 15px;
+  }
+  .nav__menu a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
